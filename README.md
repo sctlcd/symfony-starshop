@@ -81,11 +81,19 @@ Back to [top](#tableOfContents)
     git clone git@github.com:sctlcd/symfony-starshop.git
     ```
 
-4. Starting the symfony Web Server. Runs the app in the development mode.
+4. Make Composer install the project dependencies into vendor/
+   ```
+   cd symfony-starshop
+   composer install
+   ```
+5. Display project information
+   ```
+   php bin/console about
+   ```
+6. Starting the symfony Web Server. Runs the app in the development mode.
    Open http://localhost:8000 to view it in the browser.
     ```
-    cd symfony-starshop
-    symfony serve
+    symfony serve:start
      ```
 
 Back to [top](#tableOfContents)
